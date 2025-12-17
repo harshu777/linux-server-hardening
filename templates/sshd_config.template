@@ -1,4 +1,5 @@
 # SSH Hardening Template
+# Generic baseline configuration
 
 Port 22
 Protocol 2
@@ -9,6 +10,11 @@ PubkeyAuthentication yes
 
 MaxAuthTries 3
 LoginGraceTime 30
+
 ClientAliveInterval 300
 ClientAliveCountMax 2
+
+AllowTcpForwarding no
+X11Forwarding no
+PrintMotd no
 

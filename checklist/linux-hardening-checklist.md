@@ -1,19 +1,31 @@
 # Linux Server Hardening Checklist
 
-## SSH
+## 🔐 SSH
 - [x] Disable root login
 - [x] Enforce key-based authentication
 - [x] Limit authentication retries
+- [x] Configure idle session timeout
 
-## Firewall
-- [x] Default deny incoming traffic
-- [x] Allow required ports only
+## 🔥 Firewall
+- [x] Default deny inbound traffic
+- [x] Allow only required ports
+- [x] Restrict SSH access where applicable
 
-## System
+## 🚨 Intrusion Prevention
+- [x] Configure Fail2Ban
+- [x] Monitor authentication failures
+
+## ⚙️ System & Kernel
 - [x] Remove unused packages
-- [x] Enable automatic security updates
+- [x] Disable unnecessary services
+- [x] Apply sysctl security tuning
 
-## Monitoring & Backup
-- [x] Enable monitoring & alerting
-- [x] Verify backup & restore
+## 📜 Audit & Logging
+- [x] Enable audit logging
+- [x] Retain logs as per policy
+
+## 📊 Monitoring & Backup
+- [x] Enable system monitoring
+- [x] Configure alerting
+- [x] Verify backup and restore procedures
 
