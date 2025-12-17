@@ -1,0 +1,14 @@
+# SSH Hardening Template
+
+Port 22
+Protocol 2
+
+PermitRootLogin no
+PasswordAuthentication no
+PubkeyAuthentication yes
+
+MaxAuthTries 3
+LoginGraceTime 30
+ClientAliveInterval 300
+ClientAliveCountMax 2
+
